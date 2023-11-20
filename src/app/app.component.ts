@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Elso';
+  name:any= "Attila"
+  tomb=["Banán", "Alma", "Eper", "Szőlő"]
+  // valtozo:any 
+  osztaly="piros"
+  
+  gyumolcsNev="Ananász"
+
+  hozzaad(){
+    
+    this.tomb.push(this.gyumolcsNev)
+    this.gyumolcsNev=""
+
+    if (this.osztaly=='piros') this.osztaly="zold"
+    else this.osztaly='piros'
+  }
 }
